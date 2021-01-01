@@ -1,0 +1,15 @@
+current directory: /Users/nnmr/workspace/memoapp/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+/Users/nnmr/.rbenv/versions/2.5.8/bin/ruby -r ./siteconf20210101-36443-1ab7514.rb extconf.rb
+creating Makefile
+
+current directory: /Users/nnmr/workspace/memoapp/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/nnmr/workspace/memoapp/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/nnmr/workspace/memoapp/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20210101-36443-14q9jez

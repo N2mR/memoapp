@@ -1,0 +1,15 @@
+current directory: /Users/nnmr/workspace/memoapp/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/nnmr/.rbenv/versions/2.5.8/bin/ruby -r ./siteconf20210101-36443-5djp25.rb extconf.rb
+creating Makefile
+
+current directory: /Users/nnmr/workspace/memoapp/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/nnmr/workspace/memoapp/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/nnmr/workspace/memoapp/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20210101-36443-ikupoo/skiptrace/internal
