@@ -1,2 +1,44 @@
-<h1>Memos#index</h1>
-<p>Find me in app/views/memos/index.html.erb</p>
+<div class="container">
+    <%= form_with(url: memos_path, remote: true) do |f| %>
+        <div>
+            <div class="col-md-12 mb-1">
+                <%= f.text_field :subject, class:'form-control', placeholder:'件名' %>
+            </div>
+        </div>
+        <div>
+            <div class="col-md-12 mb-1">
+                <%= f.text_field :memo, class:'form-control', placeholder:'メモ' %>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 form-group">
+                <%= f.submit 'メモを作成', class:"btn btn-primary ml-3"%>
+            </div>
+        </div>
+    <% end %>
+</div>
+
+
+
+<div class="container memos-index">
+    <% if @memos %>
+        <div class="container">
+            <div class="memo-nav row">
+                <p>subject</p>
+                <p>memo</p>
+            </div>
+            <div class="memo-background">
+                <% @memos.each do |m| %>
+                    <%= link_to memo_path(m.id), class:'memo-link_to' do %>
+                        <div class="memo-container">
+                            <p><%= m.subject %></p>
+                            <p><%= m.memo%></p>
+                        </div>
+                    <% end %>
+                <% end %>
+            </div>
+        </div>
+    <% else %>
+        <p>メモはありません</p>
+    <% end %>
+</div>

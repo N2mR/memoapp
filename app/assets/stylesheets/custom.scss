@@ -8,9 +8,9 @@ header{
     .logo{
         background-color: sienna;
         max-width: 300px;
-        width: 200px;
+        width: 150px;
         color: white;
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 5px 10px;
         margin: 0;
     }
@@ -24,6 +24,37 @@ header{
     }
 }
 
+.memos-index{
+    .memo-nav{
+        display: flex;
+        margin: 15px auto;
+        p{
+            font-size: 1.5rem;
+            margin: 0 auto;
+        }
+    }
+    .memo-background{
+        background-color:  navajowhite;
+        padding: 30px 50px;
+        border-radius: 10px;
+    }
+    .memo-container{
+        display: flex;
+        margin: 0 auto;
+        border-bottom: 1px brown solid;
+        p{
+            margin: 10px auto;
+            color: black;
+        }
+    }
+    .memo-link_to{
+        text-decoration: none;
+    }
+    .memo-container:hover{
+        background-color: tan;
+        border-radius: 5px;
+    }
+}
 
 
 //ログインフォーム
