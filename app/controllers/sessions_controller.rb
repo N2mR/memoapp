@@ -12,4 +12,11 @@ class SessionsController < ApplicationController
       redirect_to login_url
     end
   end
+
+  def destroy
+    log_out if logged_in?
+    cookies.signed[:user_id] = nil
+    redirect_to login_url
+  end
+
 end

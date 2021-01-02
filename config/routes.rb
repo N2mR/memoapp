@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'memos/index'
+  get 'memos/show'
+  get 'memos/new'
+  get 'memos/create'
+  get 'memos/edit'
+  get 'memos/update'
+  get 'memos/destroy'
   get 'sessions/new'
   get 'session/create'
   get 'session/destroy'
