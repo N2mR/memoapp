@@ -1,0 +1,38 @@
+//新しくメモを作成するメソッド
+function add_memo(){
+    let a_tag = document.createElement('a');
+    let div = document.createElement('div');
+    div.classList.add('memo-container');
+    let p1 = document.createElement('p');
+    let p2 = document.createElement('p');
+    const subject = document.getElementById('subject');
+    const memo = document.getElementById('memo');
+    let subject_value = subject.value;
+    let memo_value = memo.value;
+    function subject_func() {
+        if (subject_value == '') {
+            return '件名なし';
+        } else {
+            return subject_value;
+        };
+    }
+    var aa = p2.innerHTML = memo_value;
+    p2.innerHTML = memo_value;
+    div.insertAdjacentHTML('beforeend', `<p>${subject_func()}</p>`);
+    div.insertAdjacentHTML('beforeend', `<p>${memo_value}</p>`);
+    a_tag.insertAdjacentElement('beforeend',div);
+    a_tag.classList.add('memo-link_to');
+    a_tag.href = '/memos/<%= @memo.id%>';
+    const memo_background = document.getElementById('memo-background');
+    memo_background.insertAdjacentElement('afterbegin', a_tag);
+    subject.value = '';
+    memo.value = '';
+}
+
+
+const memo_background = document.getElementById('memo-background');
+if (memo_background == null) {
+    location.reload();
+} else {
+    add_memo();
+};

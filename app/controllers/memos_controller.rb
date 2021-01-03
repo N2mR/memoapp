@@ -1,7 +1,9 @@
 class MemosController < ApplicationController
+  before_action :logged_in_user
+
   def index
     @user = current_user
-    @memos = @user.memo
+    @memos = @user.memo.order(created_at: :desc)
   end
 
   def show
@@ -12,13 +14,13 @@ class MemosController < ApplicationController
 
   def create
     user = current_user
-    memo = Memo.new(memo_params)
-    if memo.subject == ''
-      memo.subject = '件名なし'
+    @memo = Memo.new(memo_params)
+    if @memo.subject == ''
+      @memo.subject = '件名なし'
     end
-    memo.user_id = user.id
-    if memo.valid?
-      memo.save
+    @memo.user_id = user.id
+    if @memo.valid?
+      @memo.save
     else
       flash[:danger] = 'メモを入力してください'
       redirect_to root_url
@@ -32,6 +34,8 @@ class MemosController < ApplicationController
   end
 
   def destroy
+    @memo = Memo.find(params[:id])
+    @memo.destroy
   end
 
     private

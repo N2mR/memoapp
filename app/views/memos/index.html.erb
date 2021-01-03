@@ -21,13 +21,13 @@
 
 
 <div class="container memos-index">
-    <% if @memos %>
-        <div class="container">
+    <% if @memos.any? %>
+        <div class="container" id='create_memo_background'>
             <div class="memo-nav row">
                 <p>subject</p>
                 <p>memo</p>
             </div>
-            <div class="memo-background">
+            <div class="memo-background" id='memo-background'>
                 <% @memos.each do |m| %>
                     <%= link_to memo_path(m.id), class:'memo-link_to' do %>
                         <div class="memo-container">
@@ -39,6 +39,6 @@
             </div>
         </div>
     <% else %>
-        <p>メモはありません</p>
+        <p class='no-memo'>メモはありません</p>
     <% end %>
 </div>

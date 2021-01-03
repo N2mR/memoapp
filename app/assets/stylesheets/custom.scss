@@ -51,8 +51,14 @@ header{
         text-decoration: none;
     }
     .memo-container:hover{
-        background-color: tan;
+        background-color: blanchedalmond;
         border-radius: 5px;
+    }
+    .no-memo{
+        margin: 50px auto;
+        font-size: 2rem;
+        font-weight: border;
+        text-align: center;
     }
 }
 
