@@ -24,6 +24,16 @@
             margin: 10px auto;
             color: black;
         }
+
+        .subject-area{
+            width:20%;
+            overflow: hidden;
+        }
+        .memo-area{
+            margin-left:auto;
+            width:75%;
+            overflow: hidden;
+        }
     }
     .memo-link_to{
         text-decoration: none;
@@ -66,6 +76,7 @@
         p{
             margin-top: 10px;
             margin-right: 10px;
+            word-wrap: break-word;
         }
         .memo{
             margin-left: 5%;

@@ -31,8 +31,12 @@
                 <% @memos.each do |m| %>
                     <%= link_to memo_path(m.id), class:'memo-link_to' do %>
                         <div class="memo-container">
-                            <p><%= m.subject %></p>
-                            <p><%= m.memo%></p>
+                            <div class="subject-area">
+                                <p class='subject'><%= m.subject %></p>
+                            </div>
+                            <div class="memo-area">
+                                <p class='memo'><%= m.memo%></p>
+                            </div>
                         </div>
                     <% end %>
                 <% end %>
