@@ -1,2 +1,25 @@
-<h1>Memos#show</h1>
-<p>Find me in app/views/memos/show.html.erb</p>
+<div class="container memos-show">
+    <div class="subject-container">
+        <p class='subject-desc'>件名</p>
+        <p class='subject'><%= @memo.subject %></p>
+    </div>
+    <div class="memo-container">
+        <p class='memo-desc'>メモ</p>
+        <p class='memo'><%= @memo.memo %></p>
+    </div>
+
+    <div class="edit-destroy-op">
+        <div class="op-right">
+            <div class="edit">
+                <p>
+                    <%= link_to '編集', edit_memo_path(@memo.id) %> 
+                </p>
+            </div>
+            <div class="destroy">
+                <p>
+                    <%= link_to '削除', memo_path(@memo.id), method: :delete, data: { confirm: '削除してもよろしいですか？'} %>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

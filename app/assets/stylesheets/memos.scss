@@ -1,3 +1,108 @@
 // Place all the styles related to the Memos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.memos-index{
+    .memo-nav{
+        display: flex;
+        margin: 15px auto;
+        p{
+            font-size: 1.5rem;
+            margin: 0 auto;
+        }
+    }
+    .memo-background{
+        background-color:wheat;
+        padding: 30px 50px;
+        border-radius: 10px;
+    }
+    .memo-container{
+        display: flex;
+        margin: 0 auto;
+        border-bottom: 1px brown solid;
+        p{
+            margin: 10px auto;
+            color: black;
+        }
+    }
+    .memo-link_to{
+        text-decoration: none;
+    }
+    .memo-container:hover{
+        background-color: blanchedalmond;
+        border-radius: 5px;
+    }
+    .no-memo{
+        margin: 50px auto;
+        font-size: 2rem;
+        font-weight: border;
+        text-align: center;
+    }
+}
+
+.memos-show{
+    .subject-container{
+        background-color:lightsteelblue;
+        padding: 10px 15px;
+        margin-top: 10px;
+        border-radius: 8px;
+        .subject-desc{
+            font-weight: bold;
+        }
+        p{
+            text-align: center;
+            margin:0;
+        }
+    }
+    .memo-container{
+        background-color:oldlace;
+        padding: 10px 15px;
+        margin-top: 10px;
+        border-radius: 8px;
+        .memo-desc{
+            font-weight: bold;
+            text-align: center;
+        }
+        p{
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        .memo{
+            margin-left: 5%;
+        }
+    }
+    .edit-destroy-op{
+        .op-right{
+            display:flex;
+            margin: 0 0 0 auto ;
+            max-width: 1400px;
+            width: 100%;
+        }
+        .edit{
+            background-color:lightgray;
+            padding: 5px 10px;
+            margin: 5px;
+            margin-left: auto;
+            border-radius: 5px;
+            p{
+                margin: auto;
+                
+                a:hover{
+                    color:black;
+                }
+            }
+        }
+        .destroy{
+            background: palevioletred;
+            margin: 5px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            p{
+                margin: auto;
+                a:hover{
+                    color:black;
+                }
+            }
+        }
+    }
+}

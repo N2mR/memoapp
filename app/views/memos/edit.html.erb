@@ -1,2 +1,19 @@
-<h1>Memos#edit</h1>
-<p>Find me in app/views/memos/edit.html.erb</p>
+<div class="container">
+    <%= form_with(model:@memo, url: memo_path(params[:id]), local: true) do |f| %>
+        <div>
+            <div class="col-md-12 mb-1">
+                <%= f.text_field :subject, class:'form-control' %>
+            </div>
+        </div>
+        <div>
+            <div class="col-md-12 mb-1">
+                <%= f.text_area :memo, class:'form-control' %>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 form-group">
+                <%= f.submit 'メモを更新', class:"btn btn-primary ml-3"%>
+            </div>
+        </div>
+    <% end %>
+</div>

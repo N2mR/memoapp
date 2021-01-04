@@ -7,6 +7,7 @@ class MemosController < ApplicationController
   end
 
   def show
+    @memo = Memo.find(params[:id])
   end
 
   def new
@@ -28,14 +29,27 @@ class MemosController < ApplicationController
   end
 
   def edit
+    @memo = Memo.find(params[:id])
   end
 
   def update
+    @memo = Memo.find(params[:id])
+    @memo.subject = params[:memo][:subject]
+    @memo.memo = params[:memo][:memo]
+    if @memo.valid?
+      @memo.save
+      flash[:success] = '編集しました'
+      redirect_to memo_url(@memo.id)
+    else
+      flash[:danger] = '編集に失敗しました'
+      render :edit
+    end
   end
 
   def destroy
     @memo = Memo.find(params[:id])
     @memo.destroy
+    redirect_to root_url
   end
 
     private
