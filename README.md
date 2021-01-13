@@ -4,9 +4,9 @@
   
 # ☝️Demo<br>
   ログイン、メモの追加、編集<br>
-  ![operate](https://user-images.githubusercontent.com/65766343/104488837-457aae00-5612-11eb-86e7-fe845659b220.gif)<br>
+  ![addMemo](https://user-images.githubusercontent.com/65766343/104488837-457aae00-5612-11eb-86e7-fe845659b220.gif)<br>
   メモの削除、ログアウト<br>
-  ![send_message](https://user-images.githubusercontent.com/65766343/100765866-55ac4480-343b-11eb-920d-1635a94faa67.gif)<br>
+  ![deleteMemo](https://user-images.githubusercontent.com/65766343/104489245-bf129c00-5612-11eb-8960-f8636a3aa675.gif)<br>
   
 # 📚Feachure<br>
   
