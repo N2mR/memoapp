@@ -26,3 +26,11 @@
   $ cd memoapp<br>
   $ bundle install<br>
   $ rails server<br>
+  
+# 💁‍Author<br>
+  野邑　歩夢<br>
+  佛教大学<br>
+  a.n.11.3.ice@ezweb.ne.jp<br>
+
+# License<br>
+  Copyright (c) 2020 Ayumu Nomura<br>
