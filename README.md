@@ -1,25 +1,36 @@
-# README
+# ✏️Name<br>
+  
+  Memoapp<br>
+  
+# ☝️Demo<br>
+  ログイン、メモの追加、編集<br>
+  ![addMemo](https://user-images.githubusercontent.com/65766343/104488837-457aae00-5612-11eb-86e7-fe845659b220.gif)<br>
+  メモの削除、ログアウト<br>
+  ![deleteMemo](https://user-images.githubusercontent.com/65766343/104489245-bf129c00-5612-11eb-8960-f8636a3aa675.gif)<br>
+  
+# 📚Feachure<br>
+  
+  フレームワークはRuby on Rails、 バックエンドはRuby、<br>
+  フロントエンドはJavaScript、テストはRSpecでメモアプリを作成しました。<br>
+  データベースはSQlite3(development)を使用しています。<br>
+  約1週間で制作しました。<br>
+  
+# 💻Requirement<br>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  ruby 2.5.8<br>
+  Ruby on Rails 6.0.3<br>
+  
+# ⛏Usage<br>
+    
+  $ git clone https://github.com/N2mR/memoapp.git<br>
+  $ cd memoapp<br>
+  $ bundle install<br>
+  $ rails server<br>
+  
+# 💁‍Author<br>
+  野邑　歩夢<br>
+  佛教大学<br>
+  a.n.11.3.ice@ezweb.ne.jp<br>
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# memoapp
+# License<br>
+  Copyright (c) 2020 Ayumu Nomura<br>
