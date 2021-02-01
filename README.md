@@ -24,7 +24,7 @@
   デプロイ（Heroku）👉　[こちら](https://memoappn.herokuapp.com)<br>
   
     サンプルユーザー
-    sample@sample.com
+    sample1@sample.com
     password
     
   $ git clone https://github.com/N2mR/memoapp.git<br>
