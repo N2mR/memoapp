@@ -21,6 +21,11 @@
   Ruby on Rails 6.0.3<br>
   
 # ⛏Usage<br>
+  デプロイ（Heroku）👉　[こちら](https://memoappn.herokuapp.com)<br>
+  
+    サンプルユーザー
+    sample@sample.com
+    password
     
   $ git clone https://github.com/N2mR/memoapp.git<br>
   $ cd memoapp<br>
